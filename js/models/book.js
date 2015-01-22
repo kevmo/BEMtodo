@@ -8,4 +8,4 @@ app.Book = Backbone.Model.extend({
     releaseDate: 'Unknown',
     keywords: 'None'
   }
-})
+});
