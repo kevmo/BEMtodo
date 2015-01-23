@@ -7,15 +7,11 @@ var application_root = __dirname,
 
 var app = express();
 
-app.use(express.static(path.join(application_root, 'site')));
+app.use(express.static(path.join(application_root, '')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
 }));
-
-app.get('/', function(req, res){
-  res.send("SUP");
-});
 
 app.listen(PORT, function(){
   console.log("Express listening on port %d in %s mode",
